@@ -31,7 +31,6 @@ Algoritmo CINE_MOYA_
 	colMaxCont<-0
 	colVentaMax<-0
 	
-	
 	//Contadores de filas con menos ventas
 	filMinCheck<-0
 	filMinCont<-0
@@ -72,22 +71,22 @@ Algoritmo CINE_MOYA_
 	//Operaciones a realizar con los valores de la matriz 
 	
 	Para i<-0 hasta f-1 Con Paso 1 Hacer
+		filMinAux<-filMinCont
+		si filMinCheck<filMinCheck
+			filMinAux<-filMinCheck
+		FinSi
+		
 		
 		//Aqui se resetea el contador de cada fila en el inicio de cada ciclo 
 		
 		filaCheck=0
 		filaVaciaMaxCheck=0
+		filMinCheck<-0
 		
 		Para j<-0 hasta c-1 Con Paso 1 Hacer
 			
-			si filaMinCont > filaMinCheck
-				filaMinCont<-filaMinCheck
-				
-			FinSi
-			
 			filCount=0
 			filCount<- cine(i,j)
-			filMinCheck=0
 			
 			Segun filCount Hacer
 				0:		
@@ -111,14 +110,14 @@ Algoritmo CINE_MOYA_
 					mayores<- mayores+1500
 					m<-m+1
 					filaCheck<-filaCheck+1500
-					filMinCheck<-filMinCheck+1500
 					
 			Fin Segun
+			
 			
 			Escribir cine(i,j) Sin Saltar " "
 
 		FinPara
-		
+
 		//Comprobar la fila con más butacas vendidas
 		
 		si filaCheck>filaMax
@@ -128,16 +127,10 @@ Algoritmo CINE_MOYA_
 			//Escribir "i es igual " i
 		FinSi
 		
-		//Butacas menos ventas
-		
 		
 		//Calcular butacas vacias			
 		
-		si filaVaciaMaxCheck>filaVaciaMaxCont
-			filaVaciaMaxCont<-filaVaciaMaxCheck
-			filaVaciaMax<-i
-			
-		FinSi
+		
 		 
 		//Asignando la fila con menores asientos
 		si filaVaciaMaxCheck> filaVaciaMaxCont
@@ -147,8 +140,7 @@ Algoritmo CINE_MOYA_
 
 		Escribir  " "
 		
-		
-		Escribir "FilaMinCheck " filMinCheck
+
 	FinPara
 	
 	//////////////
