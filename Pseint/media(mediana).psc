@@ -31,7 +31,7 @@ Algoritmo Mediana_en_estadistica
 	FinPara
 	Escribir ""
 	
-	//Ordemiento de datos con método burbuja
+	//Ordenamiento de datos con método burbuja
 	
 	Para i<-0 Hasta limite-1
 		Para j<-0 hasta i
