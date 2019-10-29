@@ -15,15 +15,11 @@ Algoritmo burbuja
 
 	
 	Para i<-0 hasta tam-1 Con Paso 1 Hacer
-		si bubble(i)>bubble(tam-(tam-i))
-			
-			aux<-bubble(i)
-			bubble(i)<-bubble(tam-(tam-i))
-			bubble(tam-(tam-i))<-aux
-		FinSi
+		//Escribir "i vale " bubble(i)
+		//Escribir "la siguiente vale: " bubble(tam-(tam-i))
+		
 		
 		Para j<-0 hasta i
-			
 			si bubble(j)>bubble(tam-(tam-i))
 				aux<-bubble(j)
 				bubble(j)<-bubble(tam-(tam-i))
