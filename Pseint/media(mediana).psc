@@ -1,7 +1,7 @@
 Algoritmo Mediana_en_estadistica
 	
 	//En estadística la mediana se refiere al número posicionado en la mitad de un rango de números.
-	//Estos números debe estar ordenados de mayor a menor.
+	//Estos números debe estar ordenados de menor a mayor.
 	//Para rangos IMPARES la mediana es el número justo en la mitad del rango, es decir, que tiene la misma cantadidad de números antes y después
 	//Ejemplo: 1,2,3,4,5,6,7
 	//En este caso la mediana es el número 4, ya que se encuentra justo en la mitad del rango y tiene 3 números tanto antes(1,2,3) como despúes(5,6,7)
