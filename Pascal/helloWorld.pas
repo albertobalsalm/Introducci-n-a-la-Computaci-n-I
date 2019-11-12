@@ -1,5 +1,5 @@
 program firstProgram;
-Begin
+begin
 writeln('Hello world! Prepare to learn Pascal!');
 readln;
 end.
