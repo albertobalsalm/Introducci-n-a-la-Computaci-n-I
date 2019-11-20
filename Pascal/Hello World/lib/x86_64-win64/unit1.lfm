@@ -1,0 +1,31 @@
+object Form1: TForm1
+  Left = 648
+  Height = 240
+  Top = 470
+  Width = 320
+  Caption = 'Hello Hellow'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '2.0.4.0'
+  object Button1: TButton
+    Left = 104
+    Height = 49
+    Top = 160
+    Width = 120
+    Caption = 'Press button'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 0
+    Height = 37
+    Top = 0
+    Width = 320
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'Hello'
+    Font.Height = -27
+    ParentColor = False
+    ParentFont = False
+  end
+end

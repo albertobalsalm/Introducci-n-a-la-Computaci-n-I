@@ -1,0 +1,13 @@
+#Solo archivos pascal y git ignore
+!.gitignore
+*.jpg 
+*.err
+*.ini
+*.cfg
+*.dsk
+*.out
+*.lpi
+*.lps
+*.exe
+Pascal/lib
+Pascal/backup
