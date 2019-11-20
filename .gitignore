@@ -9,5 +9,6 @@
 *.lpi
 *.lps
 *.exe
+*.o
 Pascal/lib
 Pascal/backup
