@@ -1,4 +1,4 @@
-program triagulos;
+program triangulos;
 uses crt;
 var userInput:string;
     a,b,c,error:integer;
